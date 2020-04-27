@@ -12,37 +12,87 @@
   <body>
     <header>
       <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+      <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
+    <h3>Join Our Newsletter</h3>
+    <span class="newsletter">
+      Sign up today for free and be the first to get notified on new updates
+    </span>
+
     <div class="form">
-      <h3>Join Our Newsletter</h3>
-      <h4>
-        Sign up today for free and be the first to get notified on new updates.
-      </h4>
+      <input type="text" name="email" placeholder="Enter e-mail address" />
+      <button class="signup-btn">Sign Me Up</button>
 
-      <input type="text" name="email" autocomplete="off" required />
-      <label for="email" class="label-email">
-        <span class="content-email">Enter your e-mail address</span>
-      </label>
-      <button>Sign Me Up</button>
+      <span class="choose">Choose a plan that's right for your business</span>
     </div>
 
-    <div class="col">
-      adfasdfas
-      <button>Buy</button>
+    <div class="plans">
+      <div class="col">
+        <h3>Starter</h3>
+        <span class="price">$7</span>
+        <span class="per-month">per user/month</span>
+        <p>Secure file sharing and storage for teams</p>
+        <hr />
+        <ul>
+          <li>&#10003; 100GB storage</li>
+          <li>&#10003; 2GB single file upload limit</li>
+          <li>&#10003; 10 maximum users</li>
+          <li>&#10003; SSL & at-rest encryption</li>
+        </ul>
+        <hr />
+        <a href="">Show more features <span>&#8853;</span></a>
+        <button class="buy-btn">Buy</button>
+      </div>
+
+      <div class="most-popular-plan">
+        <h3>Business</h3>
+        <span class="most-popular">Most Popular</span>
+        <span class="price">$20</span>
+        <span class="per-month">per user/month</span>
+        <p>Team collaboration for any business</p>
+        <hr />
+        <ul>
+          <li>&#10003; Unlimited storage</li>
+          <li>&#10003; 5GB single file upload limit</li>
+          <li>&#10003; Unlimited users</li>
+          <li>&#10003; Two-factor authentication</li>
+          <li>&#10003; SSL & at-rest encryption</li>
+        </ul>
+        <hr />
+        <a href="">Show more features <span>&#8853;</span></a>
+        <button class="buy-btn">Buy</button>
+      </div>
+
+      <div class="col">
+        <h3>Business Plus</h3>
+        <span class="price">$33</span>
+        <span class="per-month">per user/month</span>
+        <p>Content management for your entire organization</p>
+        <hr />
+        <ul>
+          <li>&#10003; Unlimited storage</li>
+          <li>&#10003; 7GB single file upload limit</li>
+          <li>&#10003; Unlimited users</li>
+          <li>&#10003; Two-factor authentication</li>
+          <li>&#10003; SSL & at-rest encryption</li>
+          <li>&#10003; Mobile security controls</li>
+          <li>&#10003; Full user activity tracking</li>
+        </ul>
+        <hr />
+        <a href="">Show more features <span>&#8853;</span></a>
+        <button class="buy-btn">Buy</button>
+      </div>
     </div>
 
-    <div class="col">
-      adfasdfas
-      <button>Buy</button>
-    </div>
-
-    <div class="col">
-      adfasdfas
-      <button>Buy</button>
-    </div>
-
-    <footer></footer>
+    <footer>
+      <span> &copy; 2020 Sassafras</span>
+    </footer>
     <script src="dist/js/main.js"></script>
   </body>
 </html>

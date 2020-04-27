@@ -1,4 +1,16 @@
-$primary-background: #fff;
+$primary-background: #f8f8f8;
 $pimary-text-color: #000;
+$column-background: #fff;
 
-$accent-text-color: magenta;
+$accent-color: #fc5f45;
+
+@mixin most-popular-plan {
+  background-color: $column-background;
+  position: relative;
+  width: 326px;
+  border-radius: 10px;
+  margin: 14px auto;
+  box-shadow: rgba(252, 95, 69, 0.3) 0px 0px 8px;
+  padding: 10px 20px;
+  line-height: 1.6;
+}
