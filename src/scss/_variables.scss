@@ -1,0 +1,16 @@
+$primary-background: #f8f8f8;
+$pimary-text-color: #000;
+$column-background: #fff;
+
+$primary-btn-color: #537895;
+$features-link-color: #0075e8;
+
+$accent-color: #fc5f45;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
