@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -11,7 +9,7 @@ body {
 }
 
 header {
-  display: flex;
+  // display: flex;
   background-image: linear-gradient(
     to bottom,
     #09203f,
@@ -23,10 +21,11 @@ header {
   width: 100%;
   height: 350px;
   text-align: center;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   position: relative;
-  @media (min-width: 768px) {
+  @include flex-center;
+  @media (min-width: $breakpoint-tablet) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.65) 0%,
@@ -35,6 +34,7 @@ header {
       url("../img/hero-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 400px;
   }
@@ -42,13 +42,13 @@ header {
   h1 {
     color: #fff;
     position: absolute;
-    top: 24px;
+    top: 18px;
     left: 24px;
     font-size: 25px;
   }
 
   h2 {
-    color: #fff;
+    color: #f8f8f8;
     font-size: 25px;
     padding: 10px;
   }
@@ -74,7 +74,7 @@ header {
     margin: 9px 0;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     .hamburger {
       display: none;
     }
@@ -87,7 +87,7 @@ header {
       right: 39px;
     }
     li a {
-      color: #fff;
+      color: #f8f8f8;
       text-decoration: none;
       padding-right: 45px;
     }
@@ -95,19 +95,21 @@ header {
 }
 
 h3 {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  @include flex-center;
   font-size: 16px;
   padding: 15px 0;
   color: #333;
 }
 
 .newsletter {
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
+  // display: flex;
+  // justify-content: center;
+  @include flex-center;
+  padding: 0 12px;
   color: $accent-color;
 }
 
@@ -139,8 +141,7 @@ h3 {
     border-radius: 20px;
     font-size: 14px;
     outline: none;
-    width: 250px;
-    flex-grow: 1;
+    width: 300px;
     padding: 10px 10px;
     border: 1px solid #ccc;
     margin-top: 10px;
@@ -149,13 +150,14 @@ h3 {
 }
 
 .choose {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  @include flex-center;
   margin-top: 95px;
   font-size: 20px;
   color: #09203f;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 30px;
   }
 }
@@ -166,7 +168,7 @@ h3 {
   flex-wrap: wrap;
   margin-top: 42px;
   align-items: center;
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-desktop) {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -187,7 +189,7 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
     padding: 10px 20px;
     line-height: 1.6;
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint-desktop) {
       display: flex;
       flex-direction: column;
       max-width: 320px;
@@ -259,7 +261,7 @@ h3 {
       padding: 10px;
       cursor: pointer;
       outline: none;
-      @media (min-width: 1024px) {
+      @media (min-width: $breakpoint-desktop) {
         margin-top: auto;
       }
 
@@ -286,8 +288,9 @@ footer {
 
   span {
     color: $column-background;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include flex-center;
     font-weight: 200;
     font-size: 14px;
   }
